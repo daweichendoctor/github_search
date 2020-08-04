@@ -1,25 +1,41 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route, Redirect, RouteComponentProps } from 'react-router-dom';
+
+import { ErrorBoundary, Layout } from 'components';
+import { AppStore } from 'store';
+import routes from 'routes';
+
+import 'assets/style/index.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ErrorBoundary>
+      <Router>
+        <Switch>
+          {routes.map(({ component: Component, ...rest }: MyRouteProps, index: number) => (
+            <Route
+              key={index}
+              {...rest}
+              render={(params: RouteComponentProps) => {
+                if (AppStore.auth || rest.path === '/login') {
+                  return <Layout>
+                    <Component {...params} />
+                  </Layout>
+                }
+                return <Redirect
+                  to={{
+                    pathname: "/login",
+                    // 传递跳转的页面
+                    state: { from: params.location }
+                  }}
+                />
+              }}
+            />
+          ))}
+          <Redirect to='/' />
+        </Switch>
+      </Router>
+    </ErrorBoundary>
   );
 }
 
