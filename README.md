@@ -18,5 +18,5 @@ TODO
 2. 搜索结果可以手动拖拽排序
 3. Apollo Client or github-graphql-api
 
-Tips
-需要去github获取personal access token 替换变量src/utils/constants.ts/ACCESS_TOKEN
+#### Tips
+1. 需要去github获取personal access token 替换package.json中的变量ACCESS_TOKEN
