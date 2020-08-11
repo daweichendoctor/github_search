@@ -1,0 +1,35 @@
+.container {
+    header {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 48px;
+    }
+    section {
+        ul {
+            list-style: none;
+            li {
+                padding: 8px;
+                border-top: 1px solid #e1e4e8;
+                &>div>span {
+                    margin-right: 12px;
+                    cursor: pointer;
+                }
+                .title {
+                    color: #0366d6;
+                    font-size: 16px;
+                }
+                .topic {
+                    margin-top: 8px;
+                    span {
+                        display: inline-block;
+                        padding: 0 10px;
+                        line-height: 22px;
+                        color: #0366d6;
+                        border-radius: 8px;
+                        background-color: #f1f8ff;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -8,3 +8,45 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+ul, p {
+    margin: 0;
+    padding: 0;
+}
+
+// 边距
+$spaceBase: 4px;
+
+@for $i from 1 through 8 {
+    .m-t-#{$i}x {
+        margin-top: $i * $spaceBase;
+    }
+
+    .m-r-#{$i}x {
+        margin-right: $i * $spaceBase;
+    }
+
+    .m-b-#{$i}x {
+        margin-bottom: $i * $spaceBase;
+    }
+
+    .m-l-#{$i}x {
+        margin-left: $i * $spaceBase;
+    }
+
+    .p-t-#{$i}x {
+        padding-top: $i * $spaceBase;
+    }
+
+    .p-r-#{$i}x {
+        padding-right: $i * $spaceBase;
+    }
+
+    .p-b-#{$i}x {
+        padding-bottom: $i * $spaceBase;
+    }
+
+    .p-l-#{$i}x {
+        padding-left: $i * $spaceBase;
+    }
+}

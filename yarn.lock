@@ -31,6 +31,18 @@
     insert-css "^2.0.0"
     rc-util "^5.0.1"
 
+"@ant-design/icons@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.npm.taobao.org/@ant-design/icons/download/@ant-design/icons-4.2.2.tgz?cache=0&sync_timestamp=1596529281626&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40ant-design%2Ficons%2Fdownload%2F%40ant-design%2Ficons-4.2.2.tgz#6533c5a02aec49238ec4748074845ad7d85a4f5e"
+  integrity sha1-ZTPFoCrsSSOOxHSAdIRa19haT14=
+  dependencies:
+    "@ant-design/colors" "^3.1.0"
+    "@ant-design/icons-svg" "^4.0.0"
+    "@babel/runtime" "^7.10.4"
+    classnames "^2.2.6"
+    insert-css "^2.0.0"
+    rc-util "^5.0.1"
+
 "@ant-design/react-slick@~0.27.0":
   version "0.27.0"
   resolved "https://registry.npm.taobao.org/@ant-design/react-slick/download/@ant-design/react-slick-0.27.0.tgz?cache=0&sync_timestamp=1595388462475&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40ant-design%2Freact-slick%2Fdownload%2F%40ant-design%2Freact-slick-0.27.0.tgz#c5d4bfd879885b74024ffbce42cccb5f7bff41e9"
@@ -297,6 +309,13 @@
     "@babel/template" "^7.10.4"
     "@babel/types" "^7.10.4"
 
+"@babel/helper-skip-transparent-expression-wrappers@^7.11.0":
+  version "7.11.0"
+  resolved "https://registry.npm.taobao.org/@babel/helper-skip-transparent-expression-wrappers/download/@babel/helper-skip-transparent-expression-wrappers-7.11.0.tgz?cache=0&sync_timestamp=1596142927780&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fhelper-skip-transparent-expression-wrappers%2Fdownload%2F%40babel%2Fhelper-skip-transparent-expression-wrappers-7.11.0.tgz#eec162f112c2f58d3af0af125e3bb57665146729"
+  integrity sha1-7sFi8RLC9Y068K8SXju1dmUUZyk=
+  dependencies:
+    "@babel/types" "^7.11.0"
+
 "@babel/helper-split-export-declaration@^7.10.4":
   version "7.10.4"
   resolved "https://registry.npm.taobao.org/@babel/helper-split-export-declaration/download/@babel/helper-split-export-declaration-7.10.4.tgz#2c70576eaa3b5609b24cb99db2888cc3fc4251d1"
@@ -455,6 +474,15 @@
   integrity sha1-dQ8SVekwofgtjN3kUDH4Gg0K3/c=
   dependencies:
     "@babel/helper-plugin-utils" "^7.10.4"
+    "@babel/plugin-syntax-optional-chaining" "^7.8.0"
+
+"@babel/plugin-proposal-optional-chaining@^7.11.0":
+  version "7.11.0"
+  resolved "https://registry.npm.taobao.org/@babel/plugin-proposal-optional-chaining/download/@babel/plugin-proposal-optional-chaining-7.11.0.tgz?cache=0&sync_timestamp=1596142928022&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fplugin-proposal-optional-chaining%2Fdownload%2F%40babel%2Fplugin-proposal-optional-chaining-7.11.0.tgz#de5866d0646f6afdaab8a566382fe3a221755076"
+  integrity sha1-3lhm0GRvav2quKVmOC/joiF1UHY=
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.10.4"
+    "@babel/helper-skip-transparent-expression-wrappers" "^7.11.0"
     "@babel/plugin-syntax-optional-chaining" "^7.8.0"
 
 "@babel/plugin-proposal-private-methods@^7.10.4":
@@ -1142,6 +1170,15 @@
   version "7.10.5"
   resolved "https://registry.npm.taobao.org/@babel/types/download/@babel/types-7.10.5.tgz#d88ae7e2fde86bfbfe851d4d81afa70a997b5d15"
   integrity sha1-2Irn4v3oa/v+hR1Nga+nCpl7XRU=
+  dependencies:
+    "@babel/helper-validator-identifier" "^7.10.4"
+    lodash "^4.17.19"
+    to-fast-properties "^2.0.0"
+
+"@babel/types@^7.11.0":
+  version "7.11.0"
+  resolved "https://registry.npm.taobao.org/@babel/types/download/@babel/types-7.11.0.tgz?cache=0&sync_timestamp=1596142926693&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Ftypes%2Fdownload%2F%40babel%2Ftypes-7.11.0.tgz#2ae6bf1ba9ae8c3c43824e5861269871b206e90d"
+  integrity sha1-Kua/G6mujDxDgk5YYSaYcbIG6Q0=
   dependencies:
     "@babel/helper-validator-identifier" "^7.10.4"
     lodash "^4.17.19"
@@ -2555,7 +2592,7 @@ babel-preset-react-app@^9.1.2:
     babel-plugin-macros "2.8.0"
     babel-plugin-transform-react-remove-prop-types "0.4.24"
 
-babel-runtime@^6.26.0:
+babel-runtime@6.x, babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "https://registry.npm.taobao.org/babel-runtime/download/babel-runtime-6.26.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fbabel-runtime%2Fdownload%2Fbabel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
   integrity sha1-llxwWGaOgrVde/4E/yM3vItWR/4=
@@ -7946,11 +7983,6 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-pct-encode@~1.0.0:
-  version "1.0.2"
-  resolved "https://registry.npm.taobao.org/pct-encode/download/pct-encode-1.0.2.tgz#b99b7b044d6bd7c39e4839a7a80122ad7515caa5"
-  integrity sha1-uZt7BE1r18OeSDmnqAEirXUVyqU=
-
 performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npm.taobao.org/performance-now/download/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
@@ -8795,7 +8827,7 @@ prompts@^2.0.1:
     kleur "^3.0.3"
     sisteransi "^1.0.4"
 
-prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@^15.6.0, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.npm.taobao.org/prop-types/download/prop-types-15.7.2.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fprop-types%2Fdownload%2Fprop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
@@ -8912,7 +8944,7 @@ querystringify@^2.1.1:
   resolved "https://registry.npm.taobao.org/querystringify/download/querystringify-2.1.1.tgz#60e5a5fd64a7f8bfa4d2ab2ed6fdf4c85bad154e"
   integrity sha1-YOWl/WSn+L+k0qsu1v30yFutFU4=
 
-raf@^3.4.0, raf@^3.4.1:
+raf@^3.4.0, raf@^3.4.1, raf@~3.4.0:
   version "3.4.1"
   resolved "https://registry.npm.taobao.org/raf/download/raf-3.4.1.tgz#0742e99a4a6552f445d73e3ee0328af0ff1ede39"
   integrity sha1-B0LpmkplUvRF1z4+4DKK8P8e3jk=
@@ -9110,6 +9142,16 @@ rc-progress@~3.0.0:
   dependencies:
     classnames "^2.2.6"
 
+rc-queue-anim@^1.8.5:
+  version "1.8.5"
+  resolved "https://registry.npm.taobao.org/rc-queue-anim/download/rc-queue-anim-1.8.5.tgz#01ef3872bdfa0b70bb915ef9a637fc404244a589"
+  integrity sha1-Ae84cr36C3C7kV75pjf8QEJEpYk=
+  dependencies:
+    babel-runtime "6.x"
+    prop-types "^15.6.0"
+    rc-tween-one "^2.5.0"
+    react-lifecycles-compat "^3.0.4"
+
 rc-rate@~2.8.2:
   version "2.8.2"
   resolved "https://registry.npm.taobao.org/rc-rate/download/rc-rate-2.8.2.tgz?cache=0&sync_timestamp=1592195474924&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Frc-rate%2Fdownload%2Frc-rate-2.8.2.tgz#d82d237d74fd4aef3e0581d2700b646cdd1cd8a2"
@@ -9248,6 +9290,18 @@ rc-trigger@^4.0.0, rc-trigger@^4.2.0, rc-trigger@^4.2.1, rc-trigger@^4.3.0, rc-t
     rc-animate "^3.0.0"
     rc-util "^5.0.1"
 
+rc-tween-one@^2.5.0:
+  version "2.7.3"
+  resolved "https://registry.npm.taobao.org/rc-tween-one/download/rc-tween-one-2.7.3.tgz#c9d3c44743e25c654d65c22ec3934afd79923fae"
+  integrity sha1-ydPER0PiXGVNZcIuw5NK/XmSP64=
+  dependencies:
+    babel-runtime "6.x"
+    prop-types "^15.6.1"
+    raf "~3.4.0"
+    react-lifecycles-compat "^3.0.4"
+    style-utils "~0.2.0"
+    tween-functions "~1.2.0"
+
 rc-upload@~3.2.0:
   version "3.2.0"
   resolved "https://registry.npm.taobao.org/rc-upload/download/rc-upload-3.2.0.tgz#251fc3c9105902e808600a414f368f285d63bfba"
@@ -9333,6 +9387,11 @@ react-is@^16.12.0, react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.1, react-i
   version "16.13.1"
   resolved "https://registry.npm.taobao.org/react-is/download/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=
+
+react-lifecycles-compat@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.npm.taobao.org/react-lifecycles-compat/download/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
+  integrity sha1-TxonOv38jzSIqMUWv9p4+HI1I2I=
 
 react-router-dom@^5.2.0:
   version "5.2.0"
@@ -10579,6 +10638,11 @@ style-loader@0.23.1:
     loader-utils "^1.1.0"
     schema-utils "^1.0.0"
 
+style-utils@~0.2.0:
+  version "0.2.0"
+  resolved "https://registry.npm.taobao.org/style-utils/download/style-utils-0.2.0.tgz#3d8614931b8ff6e1eea0545f1dbfaf271bb1aa7e"
+  integrity sha1-PYYUkxuP9uHuoFRfHb+vJxuxqn4=
+
 stylehacks@^4.0.0:
   version "4.0.3"
   resolved "https://registry.npm.taobao.org/stylehacks/download/stylehacks-4.0.3.tgz?cache=0&sync_timestamp=1595815269640&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fstylehacks%2Fdownload%2Fstylehacks-4.0.3.tgz#6718fcaf4d1e07d8a1318690881e8d96726a71d5"
@@ -10882,6 +10946,11 @@ tunnel-agent@^0.6.0:
   dependencies:
     safe-buffer "^5.0.1"
 
+tween-functions@~1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npm.taobao.org/tween-functions/download/tween-functions-1.2.0.tgz#1ae3a50e7c60bb3def774eac707acbca73bbc3ff"
+  integrity sha1-GuOlDnxguz3vd06scHrLynO7w/8=
+
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"
   resolved "https://registry.npm.taobao.org/tweetnacl/download/tweetnacl-0.14.5.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
@@ -11023,13 +11092,6 @@ uri-js@^4.2.2:
   integrity sha1-lMVA4f93KVbiKZUHwBCupsiDjrA=
   dependencies:
     punycode "^2.1.0"
-
-uri-template@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npm.taobao.org/uri-template/download/uri-template-1.0.1.tgz#14a925a37e4d93f7625432aa116b05e50cae81ad"
-  integrity sha1-FKklo35Nk/diVDKqEWsF5Qyuga0=
-  dependencies:
-    pct-encode "~1.0.0"
 
 urix@^0.1.0:
   version "0.1.0"
