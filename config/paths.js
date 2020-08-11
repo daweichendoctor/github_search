@@ -48,6 +48,10 @@ const resolveModule = (resolveFn, filePath) => {
   return resolveFn(`${filePath}.js`);
 };
 
+const getAccessToken = PackageJson => {
+  return require(PackageJson).ACCESS_TOKEN;
+}
+
 // config after eject: we're in ./config/
 module.exports = {
   dotenv: resolveApp('.env'),
@@ -65,6 +69,7 @@ module.exports = {
   proxySetup: resolveApp('src/setupProxy.js'),
   appNodeModules: resolveApp('node_modules'),
   publicUrlOrPath,
+  ACCESS_TOKEN: getAccessToken(resolveApp('package.json')),
 };
 
 

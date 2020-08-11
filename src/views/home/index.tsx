@@ -27,7 +27,9 @@ export default class extends React.Component {
         defaultKeyWord: '',
     }
     componentDidMount() {
-        HomeApi.getViewer().catch(err => {
+        HomeApi.getViewer().then(() => {
+            message.success('已连接到github')
+        }).catch(err => {
             message.error('github链接失败，请刷新或更新token---error' + err)
         });
         const historyList = JSON.parse(localStorage.getItem('historyList') || '[]');

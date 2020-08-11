@@ -1,14 +1,14 @@
 // github graphQL api请求封装
 import axios from 'axios';
 import { AxiosRequestConfig, AxiosResponse, AxiosInstance } from 'axios';
-import { GRAPH_QL, ACCESS_TOKEN } from 'utils/constants';
+import { GRAPH_QL } from 'utils/constants';
 
 const instance: AxiosInstance = axios.create({
     baseURL: GRAPH_QL,
     timeout: 15000,
     headers: {
         'Accept': 'application/json',
-        'Authorization': 'Bearer ' + ACCESS_TOKEN
+        'Authorization': 'Bearer ' + process.env.ACCESS_TOKEN
     },
     method: 'post',
 });
