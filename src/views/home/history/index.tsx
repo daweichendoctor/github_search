@@ -1,13 +1,15 @@
 import React from 'react';
+import { withRouter, RouteComponentProps } from 'react-router-dom';
 
 import styles from './index.module.scss';
 
-interface Props {
+interface Props extends RouteComponentProps {
     historyList: string[];
     handleClickHistory: (value: string) => void;
 }
 
-export default function (props: Props) {
+const History = function (props: Props) {
+    console.log('history component props', props)
     const { historyList, handleClickHistory } = props;
     return <div className={styles.container}>
         <header>历史记录</header>
@@ -18,3 +20,5 @@ export default function (props: Props) {
         </ul>
     </div>
 }
+
+export default withRouter(History)

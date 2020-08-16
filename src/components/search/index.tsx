@@ -35,7 +35,6 @@ const GlobalSearch: React.FC<Props> = props => {
         props.handleFocus && props.handleFocus(e.target.value)
     }
     const handleBlur = (e: React.FocusEvent<HTMLInputElement>) => {
-        console.log(12, e.target.value, keyWord)
         props.handleBlur && props.handleBlur(e.target.value)
     }
 

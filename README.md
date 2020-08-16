@@ -5,9 +5,6 @@ axios封装
 antd动态加载
 loadable-路由组件懒加载
 
-#### TODO
-routerStore
-
 #### 功能
 home-search
 1. 可以搜索github中的repository,可以点击跳转
