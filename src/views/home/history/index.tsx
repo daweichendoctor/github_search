@@ -1,4 +1,5 @@
 import React from 'react';
+import { observer } from 'mobx-react';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
 
 import styles from './index.module.scss';
@@ -21,4 +22,4 @@ const History = function (props: Props) {
     </div>
 }
 
-export default withRouter(History)
+export default withRouter(observer(History))
